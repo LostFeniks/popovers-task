@@ -1,0 +1,32 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Environment files
+.env*
+
+# Package lock files (если вы используете CI/CD)
+package-lock.json
+yarn.lock
+
+# Coverage
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
