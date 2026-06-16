@@ -1,32 +1,62 @@
-# Node modules
+# Node.js
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# package-lock.json - НЕ игнорируем, нужен для CI/CD
+yarn.lock
+pnpm-lock.yaml
 
 # Build output
 dist/
 build/
+*.local
 
-# Logs
-*.log
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# OS files
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 .DS_Store
 Thumbs.db
 
-# IDE files
-.vscode/
-.idea/
+# Logs
+logs/
+*.log
 
-# Environment files
-.env*
-
-# Package lock files (если вы используете CI/CD)
-package-lock.json
-yarn.lock
-
-# Coverage
+# Testing
 coverage/
+.nyc_output/
 
 # Temporary files
-*.tmp
-*.temp
-.cache/
+tmp/
+temp/
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Webpack
+.webpack/
+
+# Jest
+.snapshots/
+
+# ESLint
+.eslintcache
+
+# GitHub Pages
+gh-pages/
